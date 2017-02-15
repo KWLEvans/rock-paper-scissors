@@ -9,5 +9,9 @@ class RockPaperScissors
       if ($second_player == 'scissors')
         return 'Player 1';
     }
+    if ($first_player == 'scissors') {
+      if ($second_player == 'rock')
+        return 'Player 2';
+    }
   }
 }
