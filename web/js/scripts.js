@@ -9,6 +9,7 @@ $(function() {
     $("#result").removeClass("bg-success");
     $("#result").html("");
     $("p.choice").hide();
+    $("img").hide();
 
     if (event.which === 65 || event.which === 97) {
       player1Input = "rock";
@@ -55,7 +56,10 @@ $(function() {
   function revealChoices() {
     $("#player-1-played p.choice").html(capitalize(player1Input));
     $("#player-2-played p.choice").html(capitalize(player2Input));
+    $("#player-1-img").attr("src", "img/" + player1Input + ".jpg");
+    $("#player-2-img").attr("src", "img/" + player2Input + ".jpg");
     $("p.choice").show();
+    $("img").show();
   }
 });
 
