@@ -72,4 +72,32 @@ class RockPaperScissorsTest extends PHPUnit_Framework_TestCase
     //Assert
     $this->assertEquals('Player 2', $result);
   }
+
+  function test_playGame_scissorVPaper()
+  {
+    //Arrange
+    $test_RockPaperScissors = new RockPaperScissors;
+    $first_input = 'scissors';
+    $second_input = 'paper';
+
+    //Act
+    $result = $test_RockPaperScissors->playGame($first_input, $second_input);
+
+    //Assert
+    $this->assertEquals('Player 1', $result);
+  }
+
+  function test_playGame_paperVScissors()
+  {
+    //Arrange
+    $test_RockPaperScissors = new RockPaperScissors;
+    $first_input = 'paper';
+    $second_input = 'scissors';
+
+    //Act
+    $result = $test_RockPaperScissors->playGame($first_input, $second_input);
+
+    //Assert
+    $this->assertEquals('Player 2', $result);
+  }
 }
