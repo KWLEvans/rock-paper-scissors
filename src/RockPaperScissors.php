@@ -22,6 +22,8 @@ class RockPaperScissors
       if ($second_player == 'paper')
         return 'Player 1';
     }
+
+    return 'Invalid input';
   }
 }
 ?>
