@@ -37,7 +37,7 @@ $(function() {
       $("#player-2-played .ready-tag").show();
     }
     submitGame();
-  })
+  });
 
   function submitGame() {
     if (player1Played && player2Played) {
