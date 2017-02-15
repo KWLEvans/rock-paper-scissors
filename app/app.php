@@ -14,8 +14,8 @@ $app->get('/', function() use ($app) {
 });
 
 $app->post('/play', function() use ($app) {
-  $first_input = $_POST['player-1'];
-  $second_input = $_POST['player-2'];
+  $first_input = $_POST['player1Input'];
+  $second_input = $_POST['player2Input'];
   $game = new RockPaperScissors;
   $result = $game->playGame($first_input, $second_input);
 
