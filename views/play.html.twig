@@ -10,6 +10,7 @@
   <body>
     <div class='container'>
       <h1>Rock, Paper, Scissors</h1>
+      {% block content %}
       <form action='/play' method='post'>
         <label for='player-1'>Player 1:</label>
         <select id='player-1' name='player-1'>
@@ -27,6 +28,7 @@
 
         <button type='submit'>Play</button>
       </form>
+      {% endblock %}
     </div>
   </body>
 </html>
