@@ -101,3 +101,4 @@ class RockPaperScissorsTest extends PHPUnit_Framework_TestCase
     $this->assertEquals('Player 2', $result);
   }
 }
+?>
