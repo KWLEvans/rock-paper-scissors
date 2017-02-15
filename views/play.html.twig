@@ -10,38 +10,22 @@
   <body>
     <div class='container'>
       <h1>Rock, Paper, Scissors</h1>
-      <!-- <form action='/play' method='post'>
-        <label for='player-1'>Player 1:</label>
-        <select id='player-1' name='player-1'>
-          <option value='rock'>Rock</option>
-          <option value='paper'>Paper</option>
-          <option value='scissors'>Scissors</option>
-        </select>
-
-        <label for='player-2'>Player 2:</label>
-        <select id='player-2' name='player-2'>
-          <option value='rock'>Rock</option>
-          <option value='paper'>Paper</option>
-          <option value='scissors'>Scissors</option>
-        </select>
-
-        <button type='submit'>Play</button>
-      </form> -->
-
       <div class="row">
         <div id="player-1" class="col">
           <h3>Player 1</h3>
-          <button id="player-1-rock" value="rock">Rock</button>
-          <button id="player-1-paper" value="paper">Paper</button>
-          <button id="player-1-scissors" value="scissors">Scissors</button>
+          <div id="player-1-played" class="bg-success">
+            <p class='ready-tag'>Ready!</p>
+            <p class='choice'></p>
+          </div>
         </div>
         <div class="col" id="result">
         </div>
         <div id="player-2" class="col">
           <h3>Player 2</h3>
-          <button id="player-2-rock" value="rock">Rock</button>
-          <button id="player-2-paper" value="paper">Paper</button>
-          <button id="player-2-scissors" value="scissors">Scissors</button>
+          <div id="player-2-played" class="bg-success">
+            <p class='ready-tag'>Ready!</p>
+            <p class='choice'></p>
+          </div>
         </div>
       </div>
     </div>

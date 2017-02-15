@@ -1,3 +1,11 @@
 .played {
   background-color: green;
 }
+
+.ready-tag {
+  display: none;
+}
+
+p.choice {
+  display: none;
+}
