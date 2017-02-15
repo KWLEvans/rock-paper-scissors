@@ -5,5 +5,9 @@ class RockPaperScissors
   {
     if ($first_player == $second_player)
       return 'Tie';
+    if ($first_player == 'rock') {
+      if ($second_player == 'scissors')
+        return 'Player 1';
+    }
   }
 }
